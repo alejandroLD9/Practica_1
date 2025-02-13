@@ -11,7 +11,7 @@ public class Matematicas{
         double y = 0;
         
         int i = 0;
-        double PuntosDentro = 0;
+        double puntosDentro = 0;
 
         while (i < pasos) {
             x = Math.random();
@@ -19,11 +19,11 @@ public class Matematicas{
             double rango = x * x + y * y;
 
             if (rango <= 1){
-                PuntosDentro++;
+                puntosDentro++;
             }
             i++;
         }
          
-        return 4.0 * (PuntosDentro/pasos);
+        return 4.0 * (puntosDentro/pasos);
     }
 }
